@@ -28,14 +28,6 @@
   "workspaces": {
     "packages": [
       "packages/*"
-    ],
-    "nohoist": [
-      "**/react-dom",
-      "**/react-dom/**",
-      "**/react-native",
-      "**/react-native/**",
-      "**/react-native-web",
-      "**/react-native-web/**"
     ]
   }
 }
