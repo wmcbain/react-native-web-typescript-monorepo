@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["es6", "dom"],
+    "moduleResolution": "node",
+    "strict": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "target": "es6"
+  },
+  "exclude": ["node_modules"]
+}

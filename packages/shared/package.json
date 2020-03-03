@@ -1,0 +1,38 @@
+{
+  "name": "@rnwtm/shared",
+  "version": "1.0.0",
+  "author": "Wyatt McBain",
+  "main": "dist/index.js",
+  "module": "dist/shared.esm.js",
+  "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "develop": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "react": "^16.13.0",
+    "react-native": "^0.61.5"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-native": ">=0.61"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  }
+}

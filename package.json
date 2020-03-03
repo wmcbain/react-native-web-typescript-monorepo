@@ -1,0 +1,31 @@
+{
+  "name": "react-native-web-typescript-monorepo",
+  "version": "1.0.0",
+  "description": "React, React Native, React Native Web with TypeScript starter",
+  "main": "index.js",
+  "private": true,
+  "repository": "https://github.com/wmcbain/react-native-web-typescript-monorepo",
+  "author": "Wyatt McBain <wyattmcbain@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "develop": "lerna run --stream --parallel --scope @rnwtm/shared --scope @rnwtm/web develop"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "25.1.3",
+    "@types/node": "^12.0.0",
+    "@types/react": "16.9.23",
+    "@types/react-dom": "16.9.5",
+    "@types/react-native": "0.61.17",
+    "husky": "4.2.3",
+    "lerna": "3.10.7",
+    "tsdx": "0.12.3",
+    "tslib": "1.11.1",
+    "typescript": "3.8.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
