@@ -8,7 +8,7 @@
   "author": "Wyatt McBain <wyattmcbain@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "develop": "lerna run --stream --parallel --scope @rnwtm/shared --scope @rnwtm/web develop"
+    "develop": "lerna run --stream --scope @rnwtm/web develop"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -25,7 +25,17 @@
     "tslib": "1.11.1",
     "typescript": "3.8.3"
   },
-  "workspaces": [
-    "packages/*"
-  ]
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react-dom",
+      "**/react-dom/**",
+      "**/react-native",
+      "**/react-native/**",
+      "**/react-native-web",
+      "**/react-native-web/**"
+    ]
+  }
 }
